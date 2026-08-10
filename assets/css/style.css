@@ -356,8 +356,6 @@ button{
 
 .hero-small-card{
 
-    display: ;
-
     top:40px;
 
     right:20px;
@@ -881,5 +879,104 @@ button{
 .artisan-link:hover{
 
     color:#1D4ED8;
+
+}
+
+
+/* ===================================================
+   HOW IT WORKS
+=================================================== */
+
+.process-card{
+
+    position:relative;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    background:#fff;
+
+    transition:var(--transition);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow: 0 25px 50px rgba(37,99,235,.12);
+
+}
+
+.process-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:22px;
+
+    color:#CBD5E1;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+}
+
+.process-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:10px auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#DBEAFE;
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+    transition:var(--transition);
+
+}
+
+.process-card:hover .process-icon{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.process-card h3{
+
+    font-size:1.3rem;
+
+    margin-bottom:12px;
+
+}
+
+.process-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
 
 }

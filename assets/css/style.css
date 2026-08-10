@@ -493,7 +493,7 @@ button{
 
     outline:none;
 
-    transition:var(--transition);
+    transition:var();
 
 }
 

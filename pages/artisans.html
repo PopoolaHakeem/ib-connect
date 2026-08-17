@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Artisans | IB Connect</title>
+
+    <meta name="description" content="Find trusted artisans and local professionals on IB Connect.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: "#2563EB",
+
+                        secondary: "#14B8A6",
+
+                        accent: "#F59E0B"
+
+                    },
+
+                    fontFamily: {
+
+                        heading: ['Poppins', 'sans-serif'],
+
+                        body: ['Inter', 'sans-serif']
+
+                    }
+
+                }
+
+            }
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body class="bg-slate-50 font-body">
+
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header id="directory-header" class="bg-white shadow-sm">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <nav class="h-20 flex items-center justify-between">
+
+                <a id="directory-logo" href="../index.html" class="flex items-center gap-2">
+
+                    <i class="fa-solid fa-location-dot text-primary text-2xl"></i>
+
+                    <span class="logo-text">
+                        IB Connect
+                    </span>
+
+                </a>
+
+                <a id="back-home" href="../index.html" class="btn-outline">
+
+                    <i class="fa-solid fa-arrow-left mr-2"></i>
+
+                    Back Home
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================
+         DIRECTORY HERO
+    =========================== -->
+
+    <main>
+
+        <section id="directory-hero" class="py-20">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center">
+
+                    <span class="section-badge">
+                        Trusted Professionals
+                    </span>
+
+                    <h1 class="directory-title mt-5">
+                        Find the Right Artisan
+                    </h1>
+
+                    <p class="directory-description">
+                        Browse trusted professionals and find the right
+                        person for your next job.
+                    </p>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <div id="artisan-search" class="directory-search mt-10">
+
+                    <input id="artisan-search-input" type="search" placeholder="Search artisans or services..."
+                        aria-label="Search artisans">
+
+                    <select id="artisan-category-filter" aria-label="Filter by category">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="electrician">
+                            Electrician
+                        </option>
+
+                        <option value="plumbing">
+                            Plumbing
+                        </option>
+
+                        <option value="photography">
+                            Photography
+                        </option>
+
+                        <option value="fashion">
+                            Fashion Designer
+                        </option>
+
+                    </select>
+
+                    <button id="artisan-search-btn" class="btn-primary">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+             ARTISAN RESULTS
+        =========================== -->
+
+        <section id="artisan-results" class="pb-24">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="flex items-center justify-between mb-8">
+
+                    <h2 class="text-2xl font-heading font-bold">
+                        Available Artisans
+                    </h2>
+
+                    <span id="artisan-count" class="text-slate-500">
+
+                        3 professionals
+
+                    </span>
+
+                </div>
+
+
+                <div id="artisan-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                    <!-- Artisan 001 -->
+
+                    <article class="artisan-card" data-artisan-id="001" data-category="electrician"
+                        data-search="adewale electrical services electrician ibadan">
+
+                        <div class="artisan-image">
+
+                            <div class="artisan-placeholder">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <span class="verified-badge">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Verified
+
+                            </span>
+
+                        </div>
+
+                        <div class="artisan-content">
+
+                            <span class="artisan-category">
+                                Electrician
+                            </span>
+
+                            <h3>
+                                Adewale Electrical Services
+                            </h3>
+
+                            <div class="artisan-rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>4.9</strong>
+
+                                <span>
+                                    (124 reviews)
+                                </span>
+
+                            </div>
+
+                            <p class="artisan-location">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Ibadan, Oyo
+
+                            </p>
+
+                            <div class="artisan-footer">
+
+                                <span>
+                                    From <strong>₦5,000</strong>
+                                </span>
+
+                                <a href="#" class="artisan-link">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Artisan 002 -->
+
+                    <article class="artisan-card" data-artisan-id="002" data-category="plumbing"
+                        data-search="tunde plumbing solutions plumber ibadan">
+
+                        <div class="artisan-image">
+
+                            <div class="artisan-placeholder">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <span class="verified-badge">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Verified
+
+                            </span>
+
+                        </div>
+
+                        <div class="artisan-content">
+
+                            <span class="artisan-category">
+                                Plumbing
+                            </span>
+
+                            <h3>
+                                Tunde Plumbing Solutions
+                            </h3>
+
+                            <div class="artisan-rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>4.8</strong>
+
+                                <span>
+                                    (98 reviews)
+                                </span>
+
+                            </div>
+
+                            <p class="artisan-location">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Bodija, Ibadan
+
+                            </p>
+
+                            <div class="artisan-footer">
+
+                                <span>
+                                    From <strong>₦4,500</strong>
+                                </span>
+
+                                <a href="#" class="artisan-link">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Artisan 003 -->
+
+                    <article class="artisan-card" data-artisan-id="003" data-category="photography"
+                        data-search="moments by david photographer ibadan">
+
+                        <div class="artisan-image">
+
+                            <div class="artisan-placeholder">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <span class="verified-badge">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                Verified
+
+                            </span>
+
+                        </div>
+
+                        <div class="artisan-content">
+
+                            <span class="artisan-category">
+                                Photography
+                            </span>
+
+                            <h3>
+                                Moments by David
+                            </h3>
+
+                            <div class="artisan-rating">
+
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>5.0</strong>
+
+                                <span>
+                                    (76 reviews)
+                                </span>
+
+                            </div>
+
+                            <p class="artisan-location">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Ring Road, Ibadan
+
+                            </p>
+
+                            <div class="artisan-footer">
+
+                                <span>
+                                    From <strong>₦25,000</strong>
+                                </span>
+
+                                <a href="#" class="artisan-link">
+
+                                    View Profile
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../assets/js/app.js"></script>
+
+    <script src="../assets/js/artisans.js"></script>
+
+</body>
+
+</html>

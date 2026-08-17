@@ -143,13 +143,53 @@
 
                 <!-- Mobile Menu -->
 
-                <button id="menu-btn" class="lg:hidden text-2xl text-slate-800">
+                <button id="menu-btn" class="lg:hidden text-2xl text-slate-800" aria-label="Open navigation menu"
+                    aria-expanded="false">
 
-                    <i class="fa-solid fa-bars"></i>
+                    <i id="menu-icon" class="fa-solid fa-bars">
+                    </i>
 
                 </button>
 
             </nav>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+
+        <div id="mobile-menu" class="mobile-menu">
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#">
+                Categories
+            </a>
+
+            <a href="#">
+                Businesses
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <div class="mobile-menu-actions">
+
+                <a href="#" class="btn-outline">
+                    Login
+                </a>
+
+                <a href="#" class="btn-primary">
+                    Book Now
+                </a>
+
+            </div>
 
         </div>
 
@@ -1227,7 +1267,7 @@
 
     <!-- ==========================
      FOOTER
-========================== -->
+    ========================== -->
 
     <footer id="site-footer" class="site-footer">
 

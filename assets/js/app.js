@@ -4,15 +4,37 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    // MOBILE MENU TOGGLE
     const menuBtn = document.getElementById("menu-btn");
+
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    const menuIcon = document.getElementById("menu-icon");
+
 
     menuBtn.addEventListener("click", () => {
 
-        console.log("Mobile Menu");
+        const isOpen = mobileMenu.classList.toggle("open");
+
+        menuBtn.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuIcon.classList.toggle(
+            "fa-bars",
+            !isOpen
+        );
+
+        menuIcon.classList.toggle(
+            "fa-xmark",
+            isOpen
+        );
 
     });
 
 
+    // CTA BUTTONS 
     const findArtisanBtn = document.getElementById("cta-find-artisan");
 
     const becomePartnerBtn = document.getElementById("cta-become-partner");
@@ -35,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+// FOOTER YEAR 
 const currentYear = document.getElementById("current-year");
 
 currentYear.textContent = new Date().getFullYear();

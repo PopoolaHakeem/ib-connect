@@ -89,4 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
         filterArtisans
     );
 
+
+    // PROFESSIONAL ARTISAN  COUNT
+    filterArtisans();
+
+    categoryFilter.addEventListener(
+    "change",
+    filterArtisans
+);
+
+
+// Set initial artisan count
+
+filterArtisans();
+
 });

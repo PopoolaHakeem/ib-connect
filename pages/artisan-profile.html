@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artisan Profile | IB Connect</title>
+
+    <meta name="description" content="View a trusted artisan profile on IB Connect.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: "#2563EB",
+
+                        secondary: "#14B8A6",
+
+                        accent: "#F59E0B"
+
+                    },
+
+                    fontFamily: {
+
+                        heading: ["Poppins", "sans-serif"],
+
+                        body: ["Inter", "sans-serif"]
+
+                    }
+
+                }
+
+            }
+
+        };
+    </script>
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+
+<body class="bg-slate-50 font-body">
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header id="profile-header" class="bg-white shadow-sm">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <nav class="h-20 flex items-center justify-between">
+
+                <!-- Logo -->
+
+                <a id="profile-logo" href="../index.html" class="flex items-center gap-2">
+
+                    <i class="fa-solid fa-location-dot text-primary text-2xl">
+                    </i>
+
+                    <span class="logo-text">
+                        IB Connect
+                    </span>
+
+                </a>
+
+
+                <!-- Back Button -->
+
+                <a id="profile-back-btn" href="artisans.html" class="btn-outline">
+
+                    <i class="fa-solid fa-arrow-left mr-2">
+                    </i>
+
+                    Back to Artisans
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main>
+
+        <section id="artisan-profile" class="py-16">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="profile-layout">
+
+
+                    <!-- =================================
+                         PROFILE CARD
+                    ================================== -->
+
+                    <article id="profile-main-card" class="profile-main-card">
+
+
+                        <!-- Profile Cover -->
+
+                        <div id="profile-cover" class="profile-cover">
+
+                            <div id="profile-image" class="profile-avatar">
+
+                                <i class="fa-solid fa-user">
+                                </i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Profile Content -->
+
+                        <div class="profile-content">
+
+
+                            <!-- Category + Verification -->
+
+                            <div class="flex flex-wrap items-center gap-3">
+
+                                <span id="profile-category" class="artisan-category">
+                                </span>
+
+
+                                <span id="profile-verification" class="verified-badge profile-badge">
+
+                                    <i class="fa-solid fa-circle-check">
+                                    </i>
+
+                                    Verified
+
+                                </span>
+
+                            </div>
+
+
+                            <!-- Business Name -->
+
+                            <h1 id="profile-business-name" class="profile-title">
+                            </h1>
+
+
+                            <!-- Rating -->
+
+                            <div class="artisan-rating">
+
+                                <i class="fa-solid fa-star">
+                                </i>
+
+                                <strong id="profile-rating">
+                                </strong>
+
+                                <span>
+
+                                    (
+                                    <span id="profile-reviews">
+                                    </span>
+
+                                    reviews)
+
+                                </span>
+
+                            </div>
+
+
+                            <!-- Location -->
+
+                            <p id="profile-location" class="artisan-location">
+
+                                <i class="fa-solid fa-location-dot">
+                                </i>
+
+                                <span></span>
+
+                            </p>
+
+
+                            <!-- Phone -->
+
+                            <p id="profile-phone" class="artisan-location">
+
+                                <i class="fa-solid fa-phone">
+                                </i>
+
+                                <span></span>
+
+                            </p>
+
+
+                            <!-- Divider -->
+
+                            <div class="profile-divider">
+                            </div>
+
+
+                            <!-- About -->
+
+                            <h2 class="profile-section-title">
+
+                                About this professional
+
+                            </h2>
+
+
+                            <p id="profile-description" class="profile-description">
+                            </p>
+
+
+                            <!-- Services -->
+
+                            <h2 class="profile-section-title mt-10">
+
+                                Services
+
+                            </h2>
+
+
+                            <div id="profile-services" class="service-tags">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =================================
+                         BOOKING CARD
+                    ================================== -->
+
+                    <aside id="booking-card" class="booking-card">
+
+
+                        <!-- Price -->
+
+                        <div>
+
+                            <span class="booking-label">
+
+                                Starting from
+
+                            </span>
+
+
+                            <strong id="profile-price" class="booking-price">
+                            </strong>
+
+                        </div>
+
+
+                        <!-- Booking Rating -->
+
+                        <div class="booking-rating">
+
+                            <i class="fa-solid fa-star">
+                            </i>
+
+                            <strong id="profile-booking-rating">
+                            </strong>
+
+                            <span>
+
+                                (
+                                <span id="profile-booking-reviews">
+                                </span>
+
+                                reviews)
+
+                            </span>
+
+                        </div>
+
+
+                        <!-- Request Service -->
+
+                        <button id="request-service-btn" type="button" class="btn-primary booking-btn">
+
+                            Request Service
+
+                        </button>
+
+
+                        <!-- Contact -->
+
+                        <button id="contact-artisan-btn" type="button" class="booking-secondary-btn">
+
+                            <i class="fa-regular fa-message">
+                            </i>
+
+                            Contact Artisan
+
+                        </button>
+
+
+                        <!-- Security Note -->
+
+                        <div class="booking-note">
+
+                            <i class="fa-solid fa-shield-halved">
+                            </i>
+
+                            <span>
+
+                                Your request is protected
+                                by IB Connect.
+
+                            </span>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         BOOKING MODAL
+    ========================================== -->
+
+    <div id="booking-modal" class="booking-modal" aria-hidden="true">
+
+
+        <div class="booking-modal-content">
+
+
+            <!-- Close -->
+
+            <button id="close-booking-modal" type="button" class="modal-close" aria-label="Close booking form">
+
+                <i class="fa-solid fa-xmark">
+                </i>
+
+            </button>
+
+
+            <!-- Modal Heading -->
+
+            <span class="section-badge">
+
+                Request a Service
+
+            </span>
+
+
+            <h2 class="modal-title">
+
+                Book
+                <span id="profile-modal-business-name">
+                </span>
+
+            </h2>
+
+
+            <!-- Booking Form -->
+
+            <form id="booking-form" class="booking-form">
+
+
+                <input id="customer-name" name="customerName" type="text" placeholder="Your name" autocomplete="name"
+                    required>
+
+
+                <input id="customer-phone" name="customerPhone" type="tel" placeholder="Phone number" autocomplete="tel"
+                    required>
+
+
+                <input id="service-date" name="serviceDate" type="date" required>
+
+
+                <textarea id="service-description" name="serviceDescription" rows="4"
+                    placeholder="Tell the artisan what you need..." required>
+                </textarea>
+
+
+                <button type="submit" class="btn-primary">
+
+                    Send Request
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../assets/js/app.js"></script>
+
+    <script src="../assets/js/profile.js"></script>
+
+</body>
+
+</html>

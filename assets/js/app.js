@@ -12,4 +12,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+
+    const findArtisanBtn = document.getElementById("cta-find-artisan");
+
+    const becomePartnerBtn = document.getElementById("cta-become-partner");
+
+    findArtisanBtn.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        console.log("Find an Artisan clicked");
+
+    });
+
+    becomePartnerBtn.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        console.log("Become a Partner clicked");
+
+    });
+
 });
